@@ -16,4 +16,4 @@
 
 - gui.jar
 
-![image](https://github.com/wilsonchouu/LiveGiftView/blob/master/screenshot/screenshot.gif?raw=true) 
+![image](https://raw.githubusercontent.com/wilsonchouu/tools_resource_rename/master/screenshot/screenshot.png) 
