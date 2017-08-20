@@ -1,11 +1,19 @@
 # tools_resource_rename
 切图文件分类小工具
 
-### Jars (Just click it !)
+### Jars (Just Click It !)
 
-- drawable_resource_rename.jar
-- mipmap_resource_rename.jar
+- drawable.jar
+- mipmap.jar
+- gui.jar (2017/8/21新增)
 
 ### How to use
 
-复制jar包到资源图片文件夹，双击jar包后便会出现分类好的资源图片文件夹
+- drawable.jar
+- mipmap.jar
+
+复制到资源文件夹并双击运行，资源文件即会自动分类为(drawable/mipmap-xhdpi)和(drawable/mipmap-xxhdpi)
+
+- gui.jar
+
+![image](https://github.com/wilsonchouu/LiveGiftView/blob/master/screenshot/screenshot.gif?raw=true) 
