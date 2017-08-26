@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="trunk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gui.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mipmap.jar!/" />
+      <root url="jar://$PROJECT_DIR$/drawable.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
