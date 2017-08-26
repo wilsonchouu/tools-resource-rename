@@ -11,6 +11,6 @@
 双击运行runnable目录下的rename.jar或gui-rename.jar（注意：rename.jar只能整理jar包所在的同级文件夹，gui-rename.jar可以自由选取目录整理）
 
 ### GUI
-![image](https://raw.githubusercontent.com/wilsonchouu/tools_resource_rename/master/screenshot/screenshot.png)  
+![image](https://raw.githubusercontent.com/wilsonchouu/tools_resource_rename/master/screenshot/screenshot2.png)  
   
 选取文件夹，点击开始转换

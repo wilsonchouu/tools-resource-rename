@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="trunk:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/trunk_jar</output-path>
-    <root id="archive" name="trunk.jar">
-      <element id="module-output" name="trunk" />
-    </root>
-  </artifact>
-</component>
