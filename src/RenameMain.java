@@ -1,9 +1,12 @@
 import swing.UIContainer;
 import tool.RenameHandler;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Author : zhouyx
@@ -50,24 +53,39 @@ public class RenameMain {
         container.setOnClickListener(new UIContainer.OnClickListener() {
             @Override
             public void onClick(UIContainer uiContainer, String location) {
-                RenameHandler handler = new RenameHandler(location);
-                handler.setOnProgressListener(new RenameHandler.OnProgressListener() {
+                new Thread(new Runnable() {
                     @Override
-                    public void onStart(int total) {
-                        uiContainer.setMessage("开始处理文件" + total + "个");
-                    }
+                    public void run() {
+                        RenameHandler handler = new RenameHandler(location);
+                        handler.setOnProgressListener(new RenameHandler.OnProgressListener() {
+                            @Override
+                            public void onStart(int total) {
+                                SwingUtilities.invokeLater(new Runnable() {
+                                    public void run() {
+                                        uiContainer.setStartButtonEnable(false);
+                                        uiContainer.setMessage("开始处理文件" + total + "个");
+                                    }
+                                });
+                            }
 
-                    @Override
-                    public void onProgress(int progress, int total, String original, String drawable, String mipmap) {
+                            @Override
+                            public void onProgress(int progress, int total, String original, String drawable, String mipmap) {
 
-                    }
+                            }
 
-                    @Override
-                    public void onFinish() {
-                        uiContainer.setMessage("处理完成!!!");
+                            @Override
+                            public void onFinish() {
+                                SwingUtilities.invokeLater(new Runnable() {
+                                    public void run() {
+                                        uiContainer.setStartButtonEnable(true);
+                                        uiContainer.setMessage("处理完成!!!");
+                                    }
+                                });
+                            }
+                        });
+                        handler.start();
                     }
-                });
-                handler.start();
+                }).start();
             }
         });
     }

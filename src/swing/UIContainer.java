@@ -112,6 +112,15 @@ public class UIContainer {
         statusLabel.setText(text);
     }
 
+    public void setStartButtonEnable(boolean enable) {
+        startButton.setEnabled(enable);
+        if (enable) {
+            startButton.setText("开始分类");
+        } else {
+            startButton.setText("正在分类");
+        }
+    }
+
     private JFrame createFrame() {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

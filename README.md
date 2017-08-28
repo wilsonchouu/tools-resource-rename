@@ -1,6 +1,8 @@
 # tools_resource_rename
 切图文件分类工具
 
+[项目链接](https://github.com/wilsonchouu/tools_resource_rename)
+
 ### 前言
 由于APP开发中UI设计师提供的切图都是@2x、@3x的，Android开发起来很不方便，故产生了该工具。
 
